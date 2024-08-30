@@ -7,7 +7,10 @@ defmodule DeceptionRouter.MixProject do
       version: "1.0.0",
       elixir: "~> 1.16",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      docs: docs(),
+      package: package(),
+      description: description()
     ]
   end
 
@@ -23,6 +26,24 @@ defmodule DeceptionRouter.MixProject do
     [
       {:plug_cowboy, "~> 2.0"},
       {:ex_doc, "~> 0.34.2", only: :dev, runtime: false}
+    ]
+  end
+
+  defp description() do
+    "Plug router that traps scanners, crawlers, and spambots in a forever loop"
+  end
+
+  defp docs() do
+    [
+      main: "readme",
+      extras: ["README.md"]
+    ]
+  end
+
+  defp package() do
+    [
+      licenses: ["Apache-2.0"],
+      links: %{"GitHub" => "https://github.com/mattludwigs/deception-router"}
     ]
   end
 end

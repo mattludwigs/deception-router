@@ -67,3 +67,4 @@ This should all be runtime configuration items.
 - custom logging
 - jitter
 - random 404s
+- app level rate limiting

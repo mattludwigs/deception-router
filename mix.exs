@@ -36,7 +36,7 @@ defmodule DeceptionRouter.MixProject do
   defp docs() do
     [
       main: "readme",
-      extras: ["README.md"]
+      extras: ["README.md", "CHANGELOG.md"]
     ]
   end
 

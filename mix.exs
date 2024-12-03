@@ -25,7 +25,7 @@ defmodule DeceptionRouter.MixProject do
   defp deps do
     [
       {:plug_cowboy, "~> 2.0"},
-      {:ex_doc, "~> 0.34.2", only: :dev, runtime: false}
+      {:ex_doc, "~> 0.35.1", only: :dev, runtime: false}
     ]
   end
 
